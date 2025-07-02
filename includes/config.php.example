@@ -1,0 +1,36 @@
+<?php
+/**
+ * Configuration Template for Starlink Router Rent
+ * Copy this file to config.php and update with your settings
+ */
+
+return [
+    'database' => [
+        'host' => 'localhost',
+        'name' => 'gainsmax_testtelegram',
+        'username' => 'your_username',
+        'password' => 'your_password',
+        'charset' => 'utf8mb4'
+    ],
+    'app' => [
+        'name' => 'Starlink Router Rent',
+        'url' => 'http://localhost',
+        'debug' => false,
+        'timezone' => 'UTC'
+    ],
+    'security' => [
+        'jwt_secret' => 'your_jwt_secret_here',
+        'encryption_key' => 'your_encryption_key_here',
+        'password_salt' => 'your_password_salt_here'
+    ],
+    'payments' => [
+        'plisio_api_key' => '',
+        'binance_api_key' => '',
+        'binance_secret' => ''
+    ],
+    'telegram' => [
+        'bot_token' => '',
+        'webhook_url' => ''
+    ]
+];
+?>

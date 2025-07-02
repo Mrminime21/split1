@@ -1,25 +1,6 @@
-# Starlink Router Rent - Full Stack Application
+# Starlink Router Rent - Laravel Application
 
-A comprehensive router rental platform with investment opportunities, 3-level referral system, and crypto payment integration built with React, Node.js, Express, and MySQL.
-
-## Project Structure
-
-The project is split into two main parts:
-
-### Frontend
-- React with TypeScript
-- Tailwind CSS for styling
-- React Router for navigation
-- Axios for API requests
-- React Hot Toast for notifications
-- Lucide React for icons
-
-### Backend
-- Node.js with Express
-- MySQL database
-- JWT authentication
-- Email notifications with Nodemailer
-- Crypto payment integration with Plisio.net
+A comprehensive router rental platform with investment opportunities, 3-level referral system, and crypto payment integration built with Laravel.
 
 ## Features
 
@@ -31,130 +12,170 @@ The project is split into two main parts:
 - **Responsive Design**: Works on all devices
 - **Admin Panel**: Complete management system
 
-## Getting Started
+## Requirements
 
-### Prerequisites
-
-- Node.js 18.0 or higher
+- PHP 8.1 or higher
 - MySQL 8.0 or higher
-- npm or yarn
+- Composer
+- Node.js & NPM (for frontend assets)
 
-### Installation
+## Installation
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/starlink-router-rent.git
+   git clone <repository-url>
    cd starlink-router-rent
    ```
 
-2. Install dependencies
+2. Install PHP dependencies
    ```bash
-   npm run install:all
+   composer install
    ```
 
-3. Configure environment variables
+3. Install Node.js dependencies
    ```bash
-   # Backend
-   cp backend/.env.example backend/.env
-   # Frontend
-   cp frontend/.env.example frontend/.env
+   npm install
    ```
 
-4. Set up the database
-   - Create a MySQL database
-   - Update the database configuration in `backend/.env`
-   - The tables will be created automatically on first run
-
-5. Start the development servers
+4. Copy environment file
    ```bash
-   npm run dev
+   cp .env.example .env
    ```
 
-## Development
+5. Generate application key
+   ```bash
+   php artisan key:generate
+   ```
 
-### Frontend Development
+6. Configure your database in `.env` file
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=starlink_router_rent
+   DB_USERNAME=your_username
+   DB_PASSWORD=your_password
+   ```
 
-```bash
-cd frontend
-npm run dev
+7. Run database migrations and seeders
+   ```bash
+   php artisan migrate --seed
+   ```
+
+8. Build frontend assets
+   ```bash
+   npm run build
+   ```
+
+9. Start the development server
+   ```bash
+   php artisan serve
+   ```
+
+## Configuration
+
+### Payment Gateways
+
+Add your payment gateway credentials to the `.env` file:
+
+```
+PLISIO_API_KEY=your_plisio_api_key
+BINANCE_API_KEY=your_binance_api_key
+BINANCE_SECRET=your_binance_secret
 ```
 
-### Backend Development
+### Telegram Integration
 
-```bash
-cd backend
-npm run dev
+Add your Telegram bot token:
+
+```
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 ```
 
-### Building for Production
+### Referral Commission Rates
 
-```bash
-# Build frontend
-npm run build
+Configure referral commission rates:
 
-# Start production server
-npm run start
 ```
+REFERRAL_LEVEL_1_RATE=7.00
+REFERRAL_LEVEL_2_RATE=5.00
+REFERRAL_LEVEL_3_RATE=3.00
+```
+
+## Default Admin Credentials
+
+- **Username**: admin
+- **Email**: admin@starlinkrouterrent.com
+- **Password**: admin123
+
+**Important**: Change these credentials immediately after installation!
+
+## Key Features
+
+### User Management
+- User registration with referral code support
+- 3-level referral system with automatic commission tracking
+- User dashboard with earnings overview
+- Profile management
+
+### Device Management
+- Starlink router inventory
+- Device status tracking
+- Performance monitoring
+- Rental assignment
+
+### Payment System
+- Multiple payment methods (crypto, bank transfer, etc.)
+- Plisio.net cryptocurrency integration
+- Automatic payment processing
+- Withdrawal request management
+
+### Investment System
+- Multiple investment plans
+- Daily profit calculation
+- Automatic earnings distribution
+- Compound interest options
 
 ## API Documentation
 
-The API is organized around REST principles. It accepts JSON request bodies, returns JSON responses, and uses standard HTTP response codes.
+The application includes RESTful API endpoints for:
+- User authentication
+- Device management
+- Payment processing
+- Rental management
+- Investment tracking
 
-### Base URL
+## Security Features
 
-```
-http://localhost:3000/api
-```
-
-### Authentication
-
-Most endpoints require authentication. Include the JWT token in the Authorization header:
-
-```
-Authorization: Bearer YOUR_TOKEN
-```
-
-### Endpoints
-
-- `/api/auth` - Authentication routes
-- `/api/users` - User management
-- `/api/devices` - Device management
-- `/api/rentals` - Rental management
-- `/api/investments` - Investment management
-- `/api/payments` - Payment processing
-- `/api/referrals` - Referral system
-- `/api/webhooks` - Payment webhooks
-- `/api/admin` - Admin panel routes
+- Laravel Sanctum for API authentication
+- CSRF protection
+- SQL injection prevention
+- XSS protection
+- Rate limiting
 
 ## Deployment
 
-### Frontend
+For production deployment:
 
-The frontend is a static site that can be deployed to any static hosting service:
+1. Set `APP_ENV=production` in `.env`
+2. Set `APP_DEBUG=false`
+3. Configure proper database credentials
+4. Set up SSL certificate
+5. Configure web server (Apache/Nginx)
+6. Set up cron jobs for scheduled tasks
 
-```bash
-cd frontend
-npm run build
-```
+## Scheduled Tasks
 
-This will create a `dist` directory with the built assets.
-
-### Backend
-
-The backend requires a Node.js environment:
+Add to your crontab:
 
 ```bash
-cd backend
-npm run start
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 ```
 
-For production, consider using a process manager like PM2:
+## Support
 
-```bash
-npm install -g pm2
-pm2 start backend/src/server.js
-```
+For support and questions, please contact the development team or refer to the documentation.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is proprietary software. All rights reserved.

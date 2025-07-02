@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Confirmed - {{site_name}}</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; }
+        .container { max-width: 600px; margin: 0 auto; background: #1e293b; border-radius: 12px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #7c3aed, #06b6d4); padding: 40px 20px; text-align: center; }
+        .content { padding: 40px 30px; color: #e2e8f0; }
+        .footer { background: #0f172a; padding: 30px; text-align: center; color: #94a3b8; }
+        .button { display: inline-block; background: linear-gradient(135deg, #3b82f6, #06b6d4); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px 0; }
+        .investment-box { background: #334155; padding: 25px; border-radius: 8px; margin: 20px 0; border: 2px solid #7c3aed; }
+        .amount { font-size: 36px; font-weight: bold; color: #7c3aed; text-align: center; margin: 20px 0; }
+        .detail-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #475569; }
+        .profit-highlight { background: #065f46; padding: 15px; border-radius: 6px; margin: 15px 0; border-left: 4px solid #10b981; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: white; margin: 0; font-size: 32px;">📈 Investment Confirmed!</h1>
+            <p style="color: #e0f2fe; margin: 10px 0 0 0; font-size: 18px;">Your investment is now active</p>
+        </div>
+        
+        <div class="content">
+            <h2 style="color: #7c3aed; margin-top: 0;">Congratulations {{user_name}}! 🎉</h2>
+            
+            <p>Your investment has been successfully activated and will start generating daily profits tomorrow.</p>
+            
+            <div class="investment-box">
+                <h3 style="color: #7c3aed; margin-top: 0; text-align: center;">{{plan_name}}</h3>
+                
+                <div class="amount">${{investment_amount}}</div>
+                
+                <div class="detail-row">
+                    <span>Investment Amount:</span>
+                    <span style="color: #7c3aed; font-weight: bold;">${{investment_amount}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span>Daily Profit Rate:</span>
+                    <span style="color: #10b981; font-weight: bold;">{{daily_rate}}%</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span>Daily Profit Amount:</span>
+                    <span style="color: #10b981; font-weight: bold;">${{daily_profit}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span>Investment Duration:</span>
+                    <span>{{duration}} days</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span>Maturity Date:</span>
+                    <span>{{end_date}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span>Total Expected Return:</span>
+                    <span style="color: #10b981; font-weight: bold; font-size: 18px;">${{total_expected}}</span>
+                </div>
+            </div>
+
+            <div class="profit-highlight">
+                <h3 style="color: #10b981; margin-top: 0;">💰 Profit Schedule</h3>
+                <p style="margin-bottom: 0;">Starting tomorrow, you'll receive <strong>${{daily_profit}}</strong> every day for {{duration}} days. Your profits will be automatically credited to your account balance.</p>
+            </div>
+
+            <h3 style="color: #06b6d4;">📊 Investment Benefits</h3>
+            <ul style="line-height: 1.8;">
+                <li><strong>Guaranteed Returns:</strong> Fixed daily profit rate of {{daily_rate}}%</li>
+                <li><strong>Automatic Processing:</strong> Daily profits credited automatically</li>
+                <li><strong>Compound Growth:</strong> Reinvest profits for exponential returns</li>
+                <li><strong>Flexible Withdrawal:</strong> Access your balance anytime</li>
+            </ul>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{dashboard_url}}" class="button">Track Your Investment</a>
+            </div>
+
+            <div style="background: #1e40af; padding: 20px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                <h3 style="color: #60a5fa; margin-top: 0;">🚀 Maximize Your Returns</h3>
+                <p style="margin-bottom: 0;">Consider reinvesting your daily profits into new plans for compound growth. You can also share your referral code to earn additional commissions!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>{{site_name}}</strong> - Premium Satellite Internet Rental</p>
+            <p>📧 {{support_email}} | 🌐 {{site_url}}</p>
+            <p>&copy; {{current_year}} {{site_name}}. All rights reserved.</p>
+            <p style="font-size: 12px; margin-top: 20px;">
+                <a href="{{unsubscribe_url}}" style="color: #94a3b8;">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

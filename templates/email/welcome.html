@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to {{site_name}}</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; }
+        .container { max-width: 600px; margin: 0 auto; background: #1e293b; border-radius: 12px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #3b82f6, #06b6d4); padding: 40px 20px; text-align: center; }
+        .content { padding: 40px 30px; color: #e2e8f0; }
+        .footer { background: #0f172a; padding: 30px; text-align: center; color: #94a3b8; }
+        .button { display: inline-block; background: linear-gradient(135deg, #3b82f6, #06b6d4); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px 0; }
+        .feature { background: #334155; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #06b6d4; }
+        .highlight { color: #06b6d4; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: white; margin: 0; font-size: 32px;">🛰️ Welcome to Starlink Rent!</h1>
+            <p style="color: #e0f2fe; margin: 10px 0 0 0; font-size: 18px;">Start earning daily profits today</p>
+        </div>
+        
+        <div class="content">
+            <h2 style="color: #06b6d4; margin-top: 0;">Hello {{user_name}}! 👋</h2>
+            
+            <p>Welcome to the future of satellite internet rental! Your account has been successfully created and you're ready to start earning.</p>
+            
+            <div class="feature">
+                <h3 style="color: #06b6d4; margin-top: 0;">🎁 Your Welcome Bonus</h3>
+                <p>As a new member, you've received a <span class="highlight">$10 welcome bonus</span> to get you started!</p>
+            </div>
+
+            <div class="feature">
+                <h3 style="color: #06b6d4; margin-top: 0;">🔗 Your Referral Code</h3>
+                <p>Share your unique referral code and earn up to <span class="highlight">15% commission</span>:</p>
+                <p style="background: #0f172a; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 18px; text-align: center; color: #06b6d4; font-weight: bold;">{{referral_code}}</p>
+            </div>
+
+            <h3 style="color: #06b6d4;">🚀 What you can do now:</h3>
+            <ul style="line-height: 1.8;">
+                <li><strong>Rent Starlink Devices:</strong> Choose from Basic, Standard, or Premium plans</li>
+                <li><strong>Invest in Plans:</strong> 3, 6, or 12-month investment options with guaranteed returns</li>
+                <li><strong>Build Your Network:</strong> Invite friends and earn 3-level referral commissions</li>
+                <li><strong>Crypto Payments:</strong> Deposit and withdraw using 15+ cryptocurrencies</li>
+            </ul>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{dashboard_url}}" class="button">Access Your Dashboard</a>
+            </div>
+
+            <div class="feature">
+                <h3 style="color: #06b6d4; margin-top: 0;">💰 Earning Potential</h3>
+                <ul style="margin: 0; line-height: 1.6;">
+                    <li><strong>Daily Profits:</strong> 5-12% daily returns from device rentals</li>
+                    <li><strong>Investment Returns:</strong> Up to 0.60% daily from investment plans</li>
+                    <li><strong>Referral Bonuses:</strong> 7% + 5% + 3% from 3 levels</li>
+                </ul>
+            </div>
+
+            <p>Need help getting started? Our support team is here to assist you 24/7.</p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>{{site_name}}</strong> - Premium Satellite Internet Rental</p>
+            <p>📧 {{support_email}} | 🌐 {{site_url}}</p>
+            <p>&copy; {{current_year}} {{site_name}}. All rights reserved.</p>
+            <p style="font-size: 12px; margin-top: 20px;">
+                <a href="{{unsubscribe_url}}" style="color: #94a3b8;">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

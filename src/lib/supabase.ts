@@ -31,7 +31,14 @@ export interface User {
   referral_earnings: number;
   rental_earnings: number;
   investment_earnings: number;
+  phone?: string;
+  country?: string;
+  timezone?: string;
+  language?: string;
   status: 'active' | 'suspended' | 'pending' | 'banned';
+  email_verified: boolean;
+  telegram_verified: boolean;
+  kyc_status: 'none' | 'pending' | 'approved' | 'rejected';
   created_at: string;
   updated_at: string;
 }
@@ -92,6 +99,7 @@ export interface Payment {
   payment_method: 'crypto' | 'binance' | 'card' | 'bank_transfer';
   status: 'pending' | 'processing' | 'completed' | 'failed';
   type: 'deposit' | 'withdrawal' | 'rental' | 'investment';
+  description?: string;
   created_at: string;
 }
 

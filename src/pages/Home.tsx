@@ -10,7 +10,8 @@ import {
   Globe,
   TrendingUp,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  LayoutDashboard
 } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 

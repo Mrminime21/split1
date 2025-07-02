@@ -126,8 +126,7 @@ const Rental: React.FC = () => {
           expected_daily_profit: expectedDailyProfit,
           status: 'active',
           start_date: new Date().toISOString().split('T')[0],
-          end_date: new Date(Date.now() + duration * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-          actual_start_date: new Date().toISOString().split('T')[0]
+          end_date: new Date(Date.now() + duration * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
         });
 
       if (rentalError) throw rentalError;
@@ -377,7 +376,7 @@ const Rental: React.FC = () => {
         {/* Call to Action */}
         <div className="text-center stat-card">
           <TrendingUp className="h-12 w-12 text-green-400 mx-auto mb-4" />
-          <h3 class="text-2xl font-bold text-white mb-4">Need More Funds?</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">Need More Funds?</h3>
           <p className="text-gray-300 mb-6">
             Deposit funds to start renting premium Starlink routers and earning daily profits
           </p>

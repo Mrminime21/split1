@@ -170,7 +170,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             id: authData.user.id,
             username,
             email,
-            password_hash: '', // This will be handled by Supabase Auth
             referral_code: generateReferralCode(),
             referred_by: referrerId,
             status: 'active',

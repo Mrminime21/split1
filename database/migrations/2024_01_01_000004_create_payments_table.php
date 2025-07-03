@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('crypto_currency', 20)->nullable();
             $table->decimal('crypto_amount', 20, 8)->nullable();
             $table->decimal('exchange_rate', 15, 8)->nullable();
-            $table->enum('payment_method', ['crypto', 'binance', 'card', 'bank_transfer', 'balance', 'manual']);
+            $table->enum('payment_method', ['crypto', 'binance', 'balance', 'manual']);
             $table->string('payment_provider', 50)->nullable();
             $table->string('provider_transaction_id', 200)->nullable();
             $table->json('provider_response')->nullable();

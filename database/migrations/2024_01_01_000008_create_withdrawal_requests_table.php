@@ -14,7 +14,7 @@ return new class extends Migration
             $table->decimal('amount', 12, 2);
             $table->decimal('fee_amount', 8, 2)->default(0.00);
             $table->decimal('net_amount', 12, 2);
-            $table->enum('withdrawal_method', ['crypto', 'bank_transfer', 'paypal', 'binance']);
+            $table->enum('withdrawal_method', ['crypto', 'binance']);
             $table->text('withdrawal_address')->nullable();
             $table->json('bank_details')->nullable();
             $table->enum('status', ['pending', 'approved', 'processing', 'completed', 'rejected', 'cancelled'])->default('pending');

@@ -8,6 +8,7 @@ use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\DepositController;
 use App\Http\Controllers\WithdrawalController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\WebhookController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -55,6 +56,8 @@ Route::middleware(['auth'])->group(function () {
     Route::prefix('deposits')->name('deposits.')->group(function () {
         Route::get('/create', [DepositController::class, 'create'])->name('create');
         Route::post('/', [DepositController::class, 'store'])->name('store');
+        Route::get('/success', [DepositController::class, 'success'])->name('success');
+        Route::get('/failed', [DepositController::class, 'failed'])->name('failed');
     });
     
     // Withdrawals
@@ -63,3 +66,6 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/', [WithdrawalController::class, 'store'])->name('store');
     });
 });
+
+// Webhook Routes (public)
+Route::post('/webhooks/plisio', [WebhookController::class, 'plisio'])->name('webhooks.plisio');

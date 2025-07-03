@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <h1 class="text-xl font-bold text-white">Admin Panel</h1>
-                        <p class="text-gray-400 text-sm">Starlink Router Rent</p>
+                        <p class="text-gray-400 text-sm">Star Router Rent</p>
                     </div>
                 </div>
             </div>

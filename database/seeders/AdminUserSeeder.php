@@ -12,7 +12,7 @@ class AdminUserSeeder extends Seeder
     {
         DB::table('admin_users')->insert([
             'username' => 'admin',
-            'email' => 'admin@starlinkrouterrent.com',
+            'email' => 'admin@starrouterrent.com',
             'password' => Hash::make('admin123'),
             'role' => 'super_admin',
             'status' => 'active',

@@ -1,10 +1,10 @@
-# Starlink Router Rent - Laravel Application
+# Star Router Rent - Laravel Application
 
 A comprehensive router rental platform with investment opportunities, 3-level referral system, and crypto payment integration built with Laravel.
 
 ## Features
 
-- **Premium Router Rental**: Rent Starlink routers with guaranteed daily profits
+- **Premium Router Rental**: Rent high-performance routers with guaranteed daily profits
 - **Investment Plans**: 3, 6, and 12-month investment options with daily returns
 - **3-Level Referral System**: Earn up to 15% commission from referrals
 - **Crypto Payments**: Plisio.net integration for cryptocurrency payments
@@ -24,7 +24,7 @@ A comprehensive router rental platform with investment opportunities, 3-level re
 1. Clone the repository
    ```bash
    git clone <repository-url>
-   cd starlink-router-rent
+   cd star-router-rent
    ```
 
 2. Install PHP dependencies
@@ -52,7 +52,7 @@ A comprehensive router rental platform with investment opportunities, 3-level re
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=starlink_router_rent
+   DB_DATABASE=star_router_rent
    DB_USERNAME=your_username
    DB_PASSWORD=your_password
    ```
@@ -105,7 +105,7 @@ REFERRAL_LEVEL_3_RATE=3.00
 ## Default Admin Credentials
 
 - **Username**: admin
-- **Email**: admin@starlinkrouterrent.com
+- **Email**: admin@starrouterrent.com
 - **Password**: admin123
 
 **Important**: Change these credentials immediately after installation!
@@ -119,7 +119,7 @@ REFERRAL_LEVEL_3_RATE=3.00
 - Profile management
 
 ### Device Management
-- Starlink router inventory
+- Router inventory
 - Device status tracking
 - Performance monitoring
 - Rental assignment

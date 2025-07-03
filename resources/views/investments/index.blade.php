@@ -7,7 +7,7 @@
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold text-white mb-4">Investment Plans</h1>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                Invest in our Starlink router network and earn guaranteed daily profits with transparent returns
+                Invest in our premium router network and earn guaranteed daily profits with transparent returns
             </p>
         </div>
 

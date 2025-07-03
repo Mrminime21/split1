@@ -5,9 +5,9 @@
     <div class="max-w-7xl mx-auto">
         <!-- Header -->
         <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-white mb-4">Starlink Router Rental</h1>
+            <h1 class="text-4xl font-bold text-white mb-4">Premium Router Rental</h1>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                Choose your rental plan and start earning daily profits from premium Starlink satellite routers
+                Choose your rental plan and start earning daily profits from premium high-performance routers
             </p>
         </div>
 
@@ -60,7 +60,7 @@
                 <ul class="space-y-3 mb-8">
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
-                        <span class="text-gray-300">1 Starlink Router</span>
+                        <span class="text-gray-300">1 Premium Router</span>
                     </li>
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
@@ -99,7 +99,7 @@
                 <ul class="space-y-3 mb-8">
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
-                        <span class="text-gray-300">3 Starlink Routers</span>
+                        <span class="text-gray-300">3 Premium Routers</span>
                     </li>
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
@@ -136,7 +136,7 @@
                 <ul class="space-y-3 mb-8">
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
-                        <span class="text-gray-300">6 Starlink Routers</span>
+                        <span class="text-gray-300">6 Premium Routers</span>
                     </li>
                     <li class="flex items-center">
                         <span class="text-green-400 mr-3">✓</span>
@@ -171,7 +171,7 @@
             <span class="text-green-400 text-4xl">📈</span>
             <h3 class="text-2xl font-bold text-white mb-4 mt-4">Need More Funds?</h3>
             <p class="text-gray-300 mb-6">
-                Deposit funds to start renting premium Starlink routers and earning daily profits
+                Deposit funds to start renting premium routers and earning daily profits
             </p>
             <a href="{{ route('deposits.create') }}" class="btn-primary inline-flex items-center">
                 <span class="mr-2">💰</span>

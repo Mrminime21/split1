@@ -77,8 +77,8 @@ class DepositController extends Controller
                 'source_amount' => $payment->amount,
                 'source_currency' => 'USD',
                 'order_number' => $payment->transaction_id,
-                'order_name' => 'Starlink Router Rent Deposit',
-                'description' => "Deposit to Starlink Router Rent account",
+                'order_name' => 'Star Router Rent Deposit',
+                'description' => "Deposit to Star Router Rent account",
                 'callback_url' => route('webhooks.plisio'),
                 'success_callback_url' => route('deposits.success'),
                 'fail_callback_url' => route('deposits.failed'),
@@ -131,7 +131,7 @@ class DepositController extends Controller
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/x-www-form-urlencoded',
-            'User-Agent: Laravel/Starlink-Router-Rent'
+            'User-Agent: Laravel/Star-Router-Rent'
         ]);
 
         $response = curl_exec($ch);

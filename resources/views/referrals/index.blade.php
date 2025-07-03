@@ -174,14 +174,14 @@ function copyReferralCode() {
 
 function shareToTelegram() {
     const link = '{{ url("/register?ref=" . auth()->user()->referral_code) }}';
-    const text = `Join Starlink Router Rent and start earning daily profits! Use my referral link: ${link}`;
+    const text = `Join Star Router Rent and start earning daily profits! Use my referral link: ${link}`;
     const url = `https://t.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
 }
 
 function shareToWhatsApp() {
     const link = '{{ url("/register?ref=" . auth()->user()->referral_code) }}';
-    const text = `Join Starlink Router Rent and start earning daily profits! Use my referral link: ${link}`;
+    const text = `Join Star Router Rent and start earning daily profits! Use my referral link: ${link}`;
     const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
 }

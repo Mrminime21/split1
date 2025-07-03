@@ -8,7 +8,7 @@
                 <div class="bg-gradient-to-r from-blue-500 to-cyan-400 p-3 rounded-lg w-fit mx-auto mb-4">
                     <span class="text-white text-2xl">🛰️</span>
                 </div>
-                <h2 class="text-3xl font-bold text-white">Join Starlink Router Rent</h2>
+                <h2 class="text-3xl font-bold text-white">Join Star Router Rent</h2>
                 <p class="text-gray-300 mt-2">Create your account and start earning</p>
             </div>
 

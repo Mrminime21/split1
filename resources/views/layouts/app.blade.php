@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Starlink Router Rent') }}</title>
+    <title>{{ config('app.name', 'Star Router Rent') }}</title>
     <link rel="icon" type="image/svg+xml" href="/starlink-icon.svg">
-    <meta name="description" content="Rent Starlink devices with daily profits, referral system, and crypto payments">
+    <meta name="description" content="Rent premium routers with daily profits, referral system, and crypto payments">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -64,7 +64,7 @@
                         <div class="bg-gradient-to-r from-blue-500 to-cyan-400 p-2 rounded-lg">
                             <span class="text-white text-xl">🛰️</span>
                         </div>
-                        <span class="text-2xl font-bold gradient-text">Starlink Router Rent</span>
+                        <span class="text-2xl font-bold gradient-text">Star Router Rent</span>
                     </a>
 
                     <!-- Navigation Links -->
@@ -124,9 +124,9 @@
                             <div class="bg-gradient-to-r from-blue-500 to-cyan-400 p-2 rounded-lg">
                                 <span class="text-white">🛰️</span>
                             </div>
-                            <span class="text-xl font-bold gradient-text">Starlink Router Rent</span>
+                            <span class="text-xl font-bold gradient-text">Star Router Rent</span>
                         </div>
-                        <p class="text-gray-400">Premium Starlink router rental platform with guaranteed daily profits and referral rewards.</p>
+                        <p class="text-gray-400">Premium router rental platform with guaranteed daily profits and referral rewards.</p>
                     </div>
                     <div>
                         <h3 class="text-white font-semibold mb-4">Services</h3>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; {{ date('Y') }} Starlink Router Rent. All rights reserved. | Built with Laravel</p>
+                    <p>&copy; {{ date('Y') }} Star Router Rent. All rights reserved. | Built with Laravel</p>
                 </div>
             </div>
         </footer>

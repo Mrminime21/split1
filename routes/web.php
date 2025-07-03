@@ -69,3 +69,6 @@ Route::middleware(['auth'])->group(function () {
 
 // Webhook Routes (public)
 Route::post('/webhooks/plisio', [WebhookController::class, 'plisio'])->name('webhooks.plisio');
+
+// Include admin routes
+require __DIR__.'/admin.php';
